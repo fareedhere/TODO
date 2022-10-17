@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+    content %}
+    <form method="POST">
+      <div class="mt-4">
+      <h3 align="center"><b>Sign Up</b></h3></div>
+      <div class="form-group mt-4">
+        <label for="email mt-4"><b>Email Address</b></label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+        />
+      </div>
+      <div class="form-group mt-4">
+        <label for="firstName"><b>First Name</b></label>
+        <input
+          type="text"
+          class="form-control"
+          id="firstName"
+          name="firstName"
+          placeholder="Enter first name"
+        />
+      </div>
+      <div class="form-group mt-4">
+        <label for="password1"><b>Password</b></label>
+        <input
+          type="password"
+          class="form-control"
+          id="password1"
+          name="password1"
+          placeholder="Enter password"
+        />
+      </div>
+      <div class="form-group mt-4">
+        <label for="password2"><b>Password (Confirm)</b></label>
+        <input
+          type="password"
+          class="form-control"
+          id="password2"
+          name="password2"
+          placeholder="Confirm password"
+        />
+      </div>
+      <br />
+      <div class=" center mt-4">
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form></div>
+    {% endblock %}
+    
